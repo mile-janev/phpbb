@@ -4,9 +4,9 @@
 $dbms = 'phpbb\\db\\driver\\mysql';
 $dbhost = 'localhost';
 $dbport = '';
-$dbname = 'phpbb';
-$dbuser = 'root';
-$dbpasswd = 'toor';
+$dbname = 'ui5';
+$dbuser = 'ui';
+$dbpasswd = 'ui.mk';
 $table_prefix = 'phpbb_';
 $phpbb_adm_relative_path = 'adm/';
 $acm_type = 'phpbb\\cache\\driver\\file';

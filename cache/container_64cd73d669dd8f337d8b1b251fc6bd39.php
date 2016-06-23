@@ -1214,7 +1214,7 @@ class phpbb_cache_container extends Symfony\Component\DependencyInjection\Contai
     {
         $this->services['dbal.conn.driver'] = $instance = new \phpbb\db\driver\mysql();
 
-        $instance->sql_connect('localhost', 'root', 'toor', 'phpbb', '', false, false);
+        $instance->sql_connect('localhost', 'ui', 'ui.mk', 'ui5', '', false, false);
 
         return $instance;
     }
@@ -2622,9 +2622,9 @@ class phpbb_cache_container extends Symfony\Component\DependencyInjection\Contai
             'cache.driver.class' => 'phpbb\\cache\\driver\\file',
             'dbal.driver.class' => 'phpbb\\db\\driver\\mysql',
             'dbal.dbhost' => 'localhost',
-            'dbal.dbuser' => 'root',
-            'dbal.dbpasswd' => 'toor',
-            'dbal.dbname' => 'phpbb',
+            'dbal.dbuser' => 'ui',
+            'dbal.dbpasswd' => 'ui.mk',
+            'dbal.dbname' => 'ui5',
             'dbal.dbport' => '',
             'dbal.new_link' => false,
         );
