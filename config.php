@@ -4,9 +4,17 @@
 $dbms = 'phpbb\\db\\driver\\mysql';
 $dbhost = 'localhost';
 $dbport = '';
-$dbname = 'ui5';
-$dbuser = 'ui';
-$dbpasswd = 'ui.mk';
+
+if($_SERVER['SERVER_NAME'] == "localhost"){
+    $dbname = 'phpbb';
+    $dbuser = 'root';
+    $dbpasswd = 'toor';
+} else {
+    $dbname = 'ui5';
+    $dbuser = 'ui';
+    $dbpasswd = 'ui.mk';
+}
+
 $table_prefix = 'phpbb_';
 $phpbb_adm_relative_path = 'adm/';
 $acm_type = 'phpbb\\cache\\driver\\file';
